@@ -1,0 +1,50 @@
+<%- include('../partials/header') %>
+
+    <!-- Main Content-->
+    <div class="container col-md-10 col-lg-8 px-4 px-lg-5 mb-5">
+
+        <h4>Edit Post</h4>
+        <hr>
+
+        <form method="POST" action="/posts/<%= post._id %>?_method=PUT" enctype="multipart/form-data"
+            onsubmit="return confirm('Are you sure?')">
+
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" name="title" value="<%= post.title %>">
+            </div>
+
+            <div class="mb-3">
+                <label for="excerpt" class="form-label">Excerpt</label>
+                <textarea class="form-control" name="excerpt" id="excerpt" cols="30"
+                    rows="3"><%= post.excerpt %></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="thumbnail" class="form-label">Thumbnail <small class="text-muted">(Optional)</small></label>
+                <input class="form-control" type="file" name="thumbnail" id="thumbnail">
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <img src="/img/<%= post.thumbnail %>" alt="<%= post.thumbnail %>"
+                class="img-thumbnail mb-2">
+                <small class="text-muted">NOTE: Choose Thumbnail to replace.</small>
+            </div>
+
+  
+
+            <div class="mb-3">
+                <label for="content" class="form-label">Content</label>
+                <textarea name="content" id="content"><%= post.content %></textarea>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Edit</button>
+
+        </form>
+
+    </div>
+
+
+<%- include('../partials/scripts') %>
+<%- include('../partials/footer') %>

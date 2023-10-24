@@ -1,0 +1,71 @@
+<%- include('../partials/header') %>
+
+<!-- Main Content-->
+<div class="container col-md-10 px-4 px-lg-5">
+
+        <% if(search){ %>
+            <h3 class="mb-4">Results for : <%= search %></h3>
+        <% } %>
+
+        <% if(posts.length > 0){ %>
+
+            <% for( let post of posts ) { %>
+                
+                <article class="row mb-5">
+
+                  <div class="col-md-4">
+                    <a href="posts/<%= post._id %>">
+                        <img src="/img/<%= post.thumbnail %>" alt="<%= post.thumbnail %>" 
+                        class="w-100 h-15 rounded object-fit-cover  mb-4 mb-md-0 scale-up">
+                    </a>
+                  </div>
+                  <div class="col-md-8">
+                   <div class="ps-md-3">
+
+                    <a href="posts/<%= post._id %>" class="text-decoration-none text-body">
+                        <h5 class="mb-3 fw-semibold"><%= post.title %></h5>
+                    </a>
+                        <p class="text-muted"><%= post.excerpt %></p>
+
+                        <p class="text-muted mb-0"> 
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+
+                            <small><%= new Date(post.posted_at).toDateString() %></small>
+                        </p>
+                   </div>
+
+                  </div>
+
+                </article>
+
+            <% } %>
+
+            
+            <% if(totalPages > 1){ %>
+            <nav>
+                <ul class="pagination justify-content-end">
+                    
+                    <% for(let i = 1; i <= totalPages; i++){ %>
+                        <li class="page-item <%= i == currentPage ? 'active' : '' %>">
+                            <a class="page-link" href="/?page=<%= i %>">
+                                <%= i %>
+                            </a>
+                        </li>
+                    <% } %>
+
+                </ul>
+            </nav>
+            <% } %>
+        
+        <% }else { %>
+
+            <h4 class="mb-4">No Posts Found.</h4>
+
+        <% } %>
+
+</div>
+
+<%- include('../partials/footer') %>
+

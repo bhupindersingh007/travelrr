@@ -1,0 +1,56 @@
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg border-bottom mb-5">
+    <div class="container px-4 px-lg-5 py-2 col-md-10 col-lg-8">
+        <a class="navbar-brand text-success" href="/">
+            <span class="bg-success text-white mx-1 px-1">EXPRESS</span>.JS
+        </a>
+
+        <button class="navbar-toggler btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#primary-navbar"
+            aria-controls="primary-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="primary-navbar">
+
+
+            <div class="ms-lg-auto d-lg-flex">
+
+                <% if(loggedUser){ %>
+
+                <ul class="navbar-nav py-2 py-lg-0">
+
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link dropdown-toggle align-items-center d-flex" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            <small class="me-2"><%= loggedUser.email %></small>
+                            
+                            <i class="fa fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/">Home</a></li>
+                            <li><a class="dropdown-item" href="/posts/create">Add Post</a></li>
+                            <li>
+                                <form action="/logout" method="post">
+                                    <button type="submit" class="dropdown-item">Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <% } %>
+
+
+                <form class="d-flex ms-lg-auto align-items-center mt-3 mt-lg-0" role="search" method="GET" action="/">
+                    <input class="form-control me-2" type="search" name="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-success" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+</nav>
