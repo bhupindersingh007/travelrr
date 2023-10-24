@@ -1,9 +1,9 @@
 <%- include('../partials/header') %>
 
     <!-- Main Content-->
-    <div class="container col-md-10 col-lg-8 px-4 px-lg-5 mb-5">
+    <div class="container col-md-10 px-4 px-lg-5 mb-5">
 
-        <h4>Edit Post</h4>
+        <h5 class="fw-semibold">Edit Post</h5>
         <hr>
 
         <form method="POST" action="/posts/<%= post._id %>?_method=PUT" enctype="multipart/form-data"
@@ -25,9 +25,11 @@
                 <input class="form-control" type="file" name="thumbnail" id="thumbnail">
             </div>
 
-            <div class="col-lg-4 mb-3">
-                <img src="/img/<%= post.thumbnail %>" alt="<%= post.thumbnail %>"
-                class="img-thumbnail mb-2">
+            <div class="col-lg-4 mb-4">
+                
+                <img src="/img/<%= post.thumbnail %>" alt="<%= post.thumbnail %>" 
+                class="w-100 h-15 img-thumbnail rounded object-fit-cover mb-2">
+            
                 <small class="text-muted">NOTE: Choose Thumbnail to replace.</small>
             </div>
 
