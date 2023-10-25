@@ -5,7 +5,7 @@ const { deleteFile } = require('../helper')
 const index = async (req, res) => {
     
 
-    const { page = 1, limit = 2 } = req.query
+    const { page = 1, limit = 5 } = req.query
 
     let search = req.query.search ?? ''
 
