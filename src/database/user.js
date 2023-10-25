@@ -6,22 +6,21 @@ const dotenv = require('dotenv')
 dotenv.config()
 mongoose.connect(process.env.DB_URI)
 
-const passwordText = 'password'
+const passwordText = process.env.ADMIN_PASSWORD;
 
 bcrypt.hash(passwordText, 10, async (err, hash) => {
 
 
     try {
+
         const user = await User.create({
-            username: 'admin',
-            email: 'abc@gmail.com',
+            username: process.env.ADMIN_USERNAME,
+            email: process.env.ADMIN_EMAIL,
             password: hash
         })
 
         console.log('user created.')
         console.log(`email: ${user.email}, password: ${passwordText}`)
-
-       // process.exit()
 
     } catch (e) {
         console.log(e)
