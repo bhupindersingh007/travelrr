@@ -36,3 +36,7 @@ img{
 .active>.page-link {
     opacity: 0.85;
 }
+
+.text-bg-light{
+    background-color: #dbeafe !important;
+}
