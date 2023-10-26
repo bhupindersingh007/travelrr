@@ -34,15 +34,16 @@
                             <%= post.title.length > 100 ? post.title.substr(0, 80).concat('...') : post.title  %>
                         </h5>
                     </a>
-                        <p class="text-muted"><%= post.excerpt.substr(0, 140).concat('...') %></p>
 
-                        <p class="text-muted mb-3"> 
-                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
-                            </svg>
+                    <p class="text-muted mb-2"><%= post.excerpt.substr(0, 140).concat('...') %></p>
 
-                            <small><%= new Date(post.posted_at).toDateString() %></small>
-                        </p>       
+                    <p class="text-muted mb-2"> 
+                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+
+                        <small><%= new Date(post.posted_at).toDateString() %></small>
+                    </p>       
 
                     <a href="posts/<%= post._id %>" class="small text-body">Read More</a>
 
