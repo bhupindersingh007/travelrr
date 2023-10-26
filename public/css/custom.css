@@ -30,3 +30,9 @@ img{
 .navbar-toggler:focus{
     box-shadow: none;
 }
+
+.bg-primary,
+.btn-primary,
+.active>.page-link {
+    opacity: 0.85;
+}
