@@ -31,10 +31,10 @@
 
                     <a href="posts/<%= post._id %>" class="text-decoration-none text-body">
                         <h5 class="mb-3 fw-semibold">
-                            <%= post.title.length > 100 ? post.title.substr(0, 100).concat('...') : post.title  %>
+                            <%= post.title.length > 100 ? post.title.substr(0, 80).concat('...') : post.title  %>
                         </h5>
                     </a>
-                        <p class="text-muted"><%= post.excerpt.substr(0, 200).concat('...') %></p>
+                        <p class="text-muted"><%= post.excerpt.substr(0, 140).concat('...') %></p>
 
                         <p class="text-muted mb-3"> 
                             <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
