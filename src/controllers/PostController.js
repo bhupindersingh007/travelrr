@@ -41,6 +41,7 @@ const store = async (req, res) => {
         excerpt: req.body.excerpt,
         content: req.body.content,
         thumbnail: req.file.filename,
+        tags: req.body.tags,
         posted_at: new Date().toISOString()
     })
 
@@ -74,6 +75,7 @@ const update = async (req, res) => {
     let data = {
         title: req.body.title,
         excerpt: req.body.excerpt,
+        tags : req.body.tags,
         content: req.body.content
     }
     

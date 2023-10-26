@@ -23,6 +23,12 @@
                   <div class="col-md-7 col-lg-8">
                    <div class="ps-md-3">
 
+                    <div class="mb-3">
+                        <% for( let tag of post.tags ) { %>
+                            <span class="small badge text-bg-light fw-normal"><%= tag %></span>
+                        <% } %>
+                    </div>
+
                     <a href="posts/<%= post._id %>" class="text-decoration-none text-body">
                         <h5 class="mb-3 fw-semibold">
                             <%= post.title.length > 100 ? post.title.substr(0, 100).concat('...') : post.title  %>

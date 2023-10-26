@@ -5,6 +5,7 @@ const postSchema = new mongoose.Schema({
    excerpt: { type: String, required: true },
    content: { type: String, required: true },
    thumbnail: { type: String, required: true },
+   tags: { type: [String], required: true },
    posted_at: { type: Date, required: true }
 })
 

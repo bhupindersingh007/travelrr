@@ -28,6 +28,13 @@ const validatePost = (req, res, next) => {
     }
 
 
+    if (req.body.tags.trim().length == 0) {
+
+        errors.push('Tags are required.')
+
+    }
+
+
     if (req.body.content.trim().length == 0) {
 
         errors.push('Content is required.')
@@ -42,6 +49,8 @@ const validatePost = (req, res, next) => {
         return res.redirect('back')
 
     }
+
+    req.body.tags = req.body.tags.split(',')
 
     next()
 
