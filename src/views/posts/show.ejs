@@ -20,6 +20,12 @@
             <small><%= new Date(post.posted_at).toDateString() %></small>
         </p> 
 
+        <div>
+            <% for( let tag of post.tags ) { %>
+                <span class="small badge text-bg-light fw-normal"><%= tag %></span>
+            <% } %>
+        </div>
+
         <% if(loggedUser){ %>
 
         <div>
