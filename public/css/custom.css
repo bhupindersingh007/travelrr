@@ -40,3 +40,10 @@ img{
 .text-bg-light{
     background-color: #dbeafe !important;
 }
+
+.navbar-brand > span{
+    background: linear-gradient(60deg, rgba(37,99,235,1) 35%, rgba(59,130,246,1) 100%); 
+    letter-spacing: 0.08rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
