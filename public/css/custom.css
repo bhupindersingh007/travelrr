@@ -48,3 +48,9 @@ img{
     padding-top: 2px;
     padding-bottom: 2px;
 }
+
+
+.form-control:focus{
+    border-width: 0;
+    outline : 2px solid rgba(59,130,246,1);
+}
