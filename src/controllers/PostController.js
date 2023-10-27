@@ -3,28 +3,41 @@ const Post = require('../models/Post');
 const { deleteFile } = require('../helper')
 
 const index = async (req, res) => {
-    
-
-    const { page = 1, limit = 5 } = req.query
 
     let search = req.query.search ?? ''
 
-    let count = await Post.count()
+    if (search) {
 
+        const posts = await Post.find({ title: { $regex: search, $options: 'i' } })
+            .sort({ posted_at: 'desc' })
+            .exec()
 
-    const posts = await Post.find({ title: { $regex: search, $options: 'i' } })
+        return res.render('posts/index', {
+            posts: posts,
+            search: search,
+            totalPages: 0,
+            currentPage: 0
+        })
+
+    }
+
+    const { page = 1, limit = 5 } = req.query
+
+    const count = await Post.count()
+
+    const posts = await Post.find({})
         .limit(limit * 1)
         .skip((page - 1) * limit)
-        .sort({ posted_at : 'desc' })
+        .sort({ posted_at: 'desc' })
         .exec()
-
 
     res.render('posts/index', {
         posts: posts,
-        search: search, 
+        search: search,
         totalPages: Math.ceil(count / limit),
         currentPage: page,
     })
+
 }
 
 
@@ -71,19 +84,19 @@ const edit = async (req, res) => {
 const update = async (req, res) => {
 
     const post = await Post.findById(req.params.postId).catch(() => res.redirect('/'))
-    
+
     let data = {
         title: req.body.title,
         excerpt: req.body.excerpt,
-        tags : req.body.tags,
+        tags: req.body.tags,
         content: req.body.content
     }
-    
-    if(req.file){
+
+    if (req.file) {
 
         deleteFile(post.thumbnail)
-    
-        data.thumbnail = req.file.filename   
+
+        data.thumbnail = req.file.filename
 
     }
 
@@ -100,7 +113,7 @@ const update = async (req, res) => {
 const destroy = async (req, res) => {
 
     const post = await Post.findById(req.params.postId).catch(() => res.redirect('/'))
-    
+
     deleteFile(post.thumbnail)
 
     await Post.findByIdAndDelete(req.params.postId).catch(() => res.redirect('/'))
