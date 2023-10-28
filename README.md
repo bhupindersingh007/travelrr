@@ -1,7 +1,8 @@
 ## Introduction
 A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```MongoDB```, ```Mongoose``` and ```Multer```.
 
-## Showcase
+## Demo
+![demo](https://github.com/bhupindersingh007/travelrr/blob/6845bc5a657ca5016f71954f926571046522dc0a/docs/demo.gif)
 
 ## Features
 - List latest posts with Pagination
@@ -14,7 +15,6 @@ A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```Mongo
 - Post with multiple Tags
 - Server Side Validation
 - WYSWYG Editor for posts content by TinyMCE.
-
 ### Login
 ![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/8a1bac21-5466-4ee5-92a0-c5355c73b4aa)
 
