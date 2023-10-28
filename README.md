@@ -1,5 +1,5 @@
 ## Introduction
-A full-stack MVC ```(Model, Controller & Views)``` blog CMS application with ```Node.js```, ```Express.js```, ```MongoDB```, ```Mongoose```, ```EJS``` and ```Multer```.
+A full-stack blog CMS application based on MVC ```(Model, Controller & Views)``` pattern with ```Node.js```, ```Express.js```, ```MongoDB```, ```Mongoose```, ```EJS``` and ```Multer```.
 
 ## Demo
 ![demo](docs/demo.gif)
