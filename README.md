@@ -16,17 +16,16 @@ A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```Mongo
 - WYSWYG Editor for posts content by TinyMCE.
 
 ### Login
-![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/30e88824-3db2-4af9-ac0b-fceb8c8d1462)
 ![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/8a1bac21-5466-4ee5-92a0-c5355c73b4aa)
 
 ### Read, Create, Update & Delete Posts 
-![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/a4b35dea-3c0d-466c-89e8-d89641765a4b)
+![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/b4e519bc-5840-475c-bc2a-b916bf46a568)
 
 ### Server Side Vadiation
-![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/b4cd1928-c962-414e-a8dd-3f6f019f95a4)
+![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/96ffdce3-7b0d-44e9-9133-57495b5623c8)
 
 ### Image Upload, Tags & WYSWYG Editor
-![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/8437d79e-b57b-4d12-893e-03a26a6e595c)
+![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/80ace44f-df9b-43fb-aa41-2f6dd80ec7ba)
 
 
 ## Installation & Setup
