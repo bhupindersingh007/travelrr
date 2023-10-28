@@ -1,5 +1,5 @@
 ## Introduction
-A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```MongoDB```, ```Mongoose``` and ```Multer```.
+A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```MongoDB```, ```Mongoose```, ```EJS``` and ```Multer```.
 
 ## Demo
 ![demo](docs/demo.gif)
@@ -14,18 +14,19 @@ A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```Mongo
 - Admin user can Create, Edit, Update, Delete posts
 - Post with multiple Tags
 - Server Side Validation
-- WYSWYG Editor for posts content by TinyMCE.
+- WYSWYG Editor for posts content by TinyMCE
+  
 ### Login
-![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/8a1bac21-5466-4ee5-92a0-c5355c73b4aa)
+![Login](https://github.com/bhupindersingh007/travelrr/assets/63149405/0b14c89d-878f-42c0-bd78-ade343c2d8dc)
 
 ### Read, Create, Update & Delete Posts 
-![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/b4e519bc-5840-475c-bc2a-b916bf46a568)
+![Read, Create, Update & Delete Posts](https://github.com/bhupindersingh007/travelrr/assets/63149405/07e90896-603c-4471-a17f-e4ccf56e4f43)
 
 ### Server Side Vadiation
-![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/96ffdce3-7b0d-44e9-9133-57495b5623c8)
+![Server Side Vadiation](https://github.com/bhupindersingh007/travelrr/assets/63149405/4acb71be-143b-4206-acbb-eb953590ead3)
 
 ### Image Upload, Tags & WYSWYG Editor
-![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/80ace44f-df9b-43fb-aa41-2f6dd80ec7ba)
+![Image Upload, Tags & WYSWYG Editor](https://github.com/bhupindersingh007/travelrr/assets/63149405/0aa88e64-3b72-40b8-9a50-4b4f76fc3056)
 
 
 ## Installation & Setup
