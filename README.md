@@ -17,6 +17,7 @@ A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```Mongo
 
 ### Login
 ![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/30e88824-3db2-4af9-ac0b-fceb8c8d1462)
+![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/8a1bac21-5466-4ee5-92a0-c5355c73b4aa)
 
 ### Read, Create, Update & Delete Posts 
 ![image](https://github.com/bhupindersingh007/travelrr/assets/63149405/a4b35dea-3c0d-466c-89e8-d89641765a4b)
