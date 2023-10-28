@@ -1,5 +1,5 @@
 ## Introduction
-A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```MongoDB```, ```Mongoose```, ```EJS``` and ```Multer```.
+A full-stack MVC ```(Model, Controller & Views)``` blog CMS application with ```Node.js```, ```Express.js```, ```MongoDB```, ```Mongoose```, ```EJS``` and ```Multer```.
 
 ## Demo
 ![demo](docs/demo.gif)
@@ -15,7 +15,8 @@ A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```Mongo
 - Post with multiple Tags
 - Server Side Validation
 - WYSWYG Editor for posts content by TinyMCE
-  
+- Session Based Alert Messages
+
 ### Login
 ![Login](https://github.com/bhupindersingh007/travelrr/assets/63149405/0b14c89d-878f-42c0-bd78-ade343c2d8dc)
 
