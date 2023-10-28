@@ -34,7 +34,7 @@ A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```Mongo
 - ```npm run start``` - This command will start the app server.
 - ```npm run dev``` - It will run the app server and look any changes in code by nodemon. 
 - ```npm run make-user``` - It will make a admin user in database according credentials given ```.env``` file.
-- 
+  
 **NOTE:** Copy environment variables from ```.env.example``` into new ```.env``` and specify values.
  
 ## Packages
