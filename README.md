@@ -2,7 +2,7 @@
 A full-stack blog CMS application with ```Node.js```, ```Express.js```, ```MongoDB```, ```Mongoose``` and ```Multer```.
 
 ## Demo
-![demo](https://github.com/bhupindersingh007/travelrr/blob/6845bc5a657ca5016f71954f926571046522dc0a/docs/demo.gif)
+![demo](docs/demo.gif)
 
 ## Features
 - List latest posts with Pagination
