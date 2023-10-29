@@ -16,13 +16,13 @@
 
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" name="title" value="<%= post.title %>">
+                <input type="text" class="form-control" id="title" name="title" value="<%= post.title %>" required>
             </div>
 
             <div class="mb-3">
                 <label for="excerpt" class="form-label">Excerpt</label>
                 <textarea class="form-control" name="excerpt" id="excerpt" cols="30"
-                    rows="3"><%= post.excerpt %></textarea>
+                    rows="3" required><%= post.excerpt %></textarea>
             </div>
 
             <div class="mb-3">
@@ -40,11 +40,10 @@
 
             <div class="mb-3">
                 <label for="tags" class="form-label">Tags</label>
-                <input type="text" autocomplete="off" id="tags" name="tags" value="<%= post.tags %>">
+                <input type="text" autocomplete="off" id="tags" name="tags" value="<%= post.tags %>" required>
             </div>
 
   
-
             <div class="mb-3">
                 <label for="content" class="form-label">Content</label>
                 <textarea name="content" id="content"><%= post.content %></textarea>
