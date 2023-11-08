@@ -2,7 +2,7 @@
 A full-stack blog CMS application based on MVC ```(Model, View & Controller)``` pattern with ```Node.js```, ```Express.js```, ```MongoDB```, ```Mongoose```, ```EJS``` and ```Multer```.
 
 ## Demo
-![demo](docs/demo.gif)
+https://github.com/bhupindersingh007/travelrr/assets/63149405/031ffa0b-5914-48b8-9fa7-37ee2fb2f719
 
 ## Features
 - List latest posts with Pagination
