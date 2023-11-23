@@ -34,7 +34,7 @@ https://github.com/bhupindersingh007/travelrr/assets/63149405/031ffa0b-5914-48b8
 
 - ```npm run start``` - This command will start the app server.
 - ```npm run dev``` - It will run the app server and look any changes in code by nodemon. 
-- ```npm run make-user``` - It will make a admin user in database according credentials given ```.env``` file.
+- ```npm run make-user``` - It will make a admin user in the database according to the credentials given ```.env``` file.
   
 **NOTE:** Copy environment variables from ```.env.example``` into new ```.env``` and specify values.
  
