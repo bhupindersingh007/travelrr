@@ -5,17 +5,17 @@ A full-stack blog CMS application based on MVC ```(Model, View & Controller)``` 
 https://github.com/bhupindersingh007/travelrr/assets/63149405/031ffa0b-5914-48b8-9fa7-37ee2fb2f719
 
 ## Features
-- List latest posts with Pagination
-- Allow readers to Search posts
-- Custom Authentication for Admin user (Login & Logout) by mongoose & bcrypt.
-- User Password Hashing by bcrypt
-- Multiple Admin users
-- Post Thumbnail Upload feature by Multer
-- Admin user can Create, Edit, Update, Delete posts
-- Post with multiple Tags
-- Server Side Validation
-- WYSWYG Editor for posts content by TinyMCE
-- Session Based Alert Messages
+- Latest posts with pagination
+- Search functionality for posts
+- Custom authentication for admin users using Mongoose and bcrypt
+- Password hashing for users using bcrypt
+- Support for multiple admin users
+- Thumbnail upload feature for posts using Multer
+- CRUD operations (Create, Read, Update, Delete) for admin users on posts
+- Ability to assign multiple tags to posts
+- Server-side validation for input data
+- Integration of a WYSIWYG editor (TinyMCE) for post content
+- Implementation of session-based alert messages
 
 ### Login
 ![Login](https://github.com/bhupindersingh007/travelrr/assets/63149405/0b14c89d-878f-42c0-bd78-ade343c2d8dc)
